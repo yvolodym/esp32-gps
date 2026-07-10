@@ -3589,20 +3589,12 @@
 		(uuid "b2a7ceaa-866f-491c-ad7f-f49bf9d998ff")
 	)
 	(no_connect
-		(at 106.68 118.11)
-		(uuid "b3988f83-db29-4a4c-b733-437394671551")
-	)
-	(no_connect
 		(at 106.68 138.43)
 		(uuid "c60d2685-36c6-4dbc-916a-72532af532fd")
 	)
 	(no_connect
 		(at 251.46 50.8)
 		(uuid "c9504d6d-5920-46f5-82ee-4b7e448f7092")
-	)
-	(no_connect
-		(at 106.68 120.65)
-		(uuid "e4867a3e-acaf-411a-ae04-cdd64e8cabf4")
 	)
 	(no_connect
 		(at 106.68 90.17)
@@ -4576,6 +4568,66 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 118.11) (xy 111.76 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a22044-f248-4e03-ab61-45db8fc88479")
+	)
+	(wire
+		(pts
+			(xy 106.68 120.65) (xy 111.76 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0af9f938-ded5-44ef-8929-fa44e4846e02")
+	)
+	(wire
+		(pts
+			(xy 165.1 139.7) (xy 170.18 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53092456-ae8d-4948-a9b0-3f0c2386cdb8")
+	)
+	(wire
+		(pts
+			(xy 165.1 142.24) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b814d74-0f7b-4f21-803b-d3d242434906")
+	)
+	(wire
+		(pts
+			(xy 165.1 149.86) (xy 170.18 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "333b0588-cbad-461f-b1c4-b20db307c93c")
+	)
+	(wire
+		(pts
+			(xy 170.18 149.86) (xy 170.18 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a5d4ba-2637-45dd-b404-e869ebeca7c3")
+	)
+	(wire
+		(pts
 			(xy 165.1 121.92) (xy 172.72 121.92)
 		)
 		(stroke
@@ -5033,6 +5085,46 @@
 			(justify left bottom)
 		)
 		(uuid "4208b722-2182-481b-aa38-d2bfedf9f0f5")
+	)
+	(label "GPS_TX"
+		(at 111.76 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d811490b-4a7b-4713-a77c-88dba752e238")
+	)
+	(label "GPS_RX"
+		(at 111.76 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "177ae701-2f1d-4dd9-8f70-ed5f0c9ca000")
+	)
+	(label "GPS_TX"
+		(at 170.18 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d438f79a-b105-4872-ad1f-9679b75a7f59")
+	)
+	(label "GPS_RX"
+		(at 170.18 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "225cb77c-5fee-4469-90c1-8c5b4441f2de")
 	)
 	(label "IO0"
 		(at 252.73 142.24 0)
@@ -6510,6 +6602,72 @@
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 170.18 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7cfcbe9-4366-48d7-bc87-938ef661d9da")
+		(property "Reference" "#PWR018"
+			(at 170.18 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 170.18 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8a0a203-5949-4a0c-9d79-31f1b32712b1")
+		)
+		(instances
+			(project "esp32-gps"
+				(path "/56168bfe-34bc-4344-8600-222c44ddf088"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
