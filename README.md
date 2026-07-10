@@ -49,3 +49,8 @@ kicad/
 Projektsprache ist Deutsch – Commits, Issues und Doku bitte auf Deutsch verfassen.
 
 Weitere Hinweise für die Arbeit mit Claude Code an diesem Projekt siehe [`CLAUDE.md`](./CLAUDE.md).
+
+## Lizenz
+
+Dieses Projekt steht unter der [CERN Open Hardware Licence Version 2 - Strongly Reciprocal
+(CERN-OHL-S-2.0)](./LICENSE), einer verbreiteten Copyleft-Lizenz für offene Hardwareprojekte.
