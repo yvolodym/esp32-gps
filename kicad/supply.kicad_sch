@@ -5129,7 +5129,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 58.42 114.3 0)
 			(effects
 				(font
@@ -5207,7 +5207,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "06dc24e6-ce52-46ec-9e59-6fbfdd142bf9")
-		(property "Reference" "U11"
+		(property "Reference" "U10"
 			(at 170.942 126.746 90)
 			(effects
 				(font
@@ -5225,7 +5225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_yvolodym:NCR18650B"
+		(property "Footprint" "PCM_yvolodym:CR2032"
 			(at 165.1 130.81 0)
 			(effects
 				(font
@@ -5261,7 +5261,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U11")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -5277,7 +5277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06de4470-579e-48ef-a7ac-f344d448e5fd")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR030"
 			(at 196.85 95.25 0)
 			(effects
 				(font
@@ -5327,7 +5327,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR032")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -5342,7 +5342,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14e6bb09-b349-4e0e-b044-c1fa63bc2d80")
-		(property "Reference" "C7"
+		(property "Reference" "C10"
 			(at 157.226 130.048 0)
 			(effects
 				(font
@@ -5414,7 +5414,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "C7")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5429,7 +5429,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2117ad11-8f16-47ad-a551-211059f3d43e")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR026"
 			(at 95.25 50.8 0)
 			(effects
 				(font
@@ -5479,7 +5479,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR027")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5495,7 +5495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "256a841c-bb80-40be-b93b-842694d63af9")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR028"
 			(at 104.14 29.21 0)
 			(effects
 				(font
@@ -5545,7 +5545,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR030")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -5560,7 +5560,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "391ae61a-011f-403f-9d8b-e0a109673ffd")
-		(property "Reference" "U10"
+		(property "Reference" "U9"
 			(at 163.83 144.272 0)
 			(effects
 				(font
@@ -5615,7 +5615,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U10")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -5631,7 +5631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e17971c-fa1f-4dba-aa51-057e651725bc")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR027"
 			(at 96.52 157.48 0)
 			(effects
 				(font
@@ -5681,7 +5681,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR028")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -5696,7 +5696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5496ce79-0bec-4d44-ad1f-233a16c31c38")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR023"
 			(at 58.42 87.63 0)
 			(effects
 				(font
@@ -5747,7 +5747,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR024")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5763,7 +5763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "583d01d5-4fe8-47de-98bf-6ccecca20749")
-		(property "Reference" "U12"
+		(property "Reference" "U11"
 			(at 173.99 24.13 0)
 			(effects
 				(font
@@ -5824,7 +5824,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U12")
+					(reference "U11")
 					(unit 1)
 				)
 			)
@@ -5927,7 +5927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d6287f8-6a07-49dc-b968-9e10c89b14d6")
-		(property "Reference" "C6"
+		(property "Reference" "C9"
 			(at 119.888 40.64 0)
 			(effects
 				(font
@@ -5999,7 +5999,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "C6")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6032,7 +6032,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D2.0mm_W4.8mm_H2.5mm_FlatTop"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 186.69 55.88 0)
 			(effects
 				(font
@@ -6111,7 +6111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64823861-68a9-4969-9d7a-b53ed3ca2163")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR029"
 			(at 196.85 31.75 0)
 			(effects
 				(font
@@ -6161,7 +6161,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR031")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -6263,7 +6263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7349f0b8-3299-4f72-88d8-cbd8fac0294d")
-		(property "Reference" "C9"
+		(property "Reference" "C12"
 			(at 224.79 41.9099 0)
 			(effects
 				(font
@@ -6335,7 +6335,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "C9")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -6439,7 +6439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "879240fa-6843-486e-a4aa-95ae57dcdee1")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR025"
 			(at 95.25 27.94 0)
 			(effects
 				(font
@@ -6490,7 +6490,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR026")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -6506,7 +6506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90a1f445-a492-4ef1-9d30-37ab62baa3df")
-		(property "Reference" "C8"
+		(property "Reference" "C11"
 			(at 200.66 44.4499 0)
 			(effects
 				(font
@@ -6578,7 +6578,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "C8")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -6662,7 +6662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "91af1412-e274-4031-a30a-f5f32caf2243")
-		(property "Reference" "U8"
+		(property "Reference" "U7"
 			(at 132.08 113.03 0)
 			(effects
 				(font
@@ -6744,7 +6744,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U8")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -6759,7 +6759,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1285a23-153d-4908-a9b6-9f36368481df")
-		(property "Reference" "U7"
+		(property "Reference" "U6"
 			(at 123.19 141.732 90)
 			(effects
 				(font
@@ -6843,7 +6843,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U7")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -7059,7 +7059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a85c1489-27a4-4954-bc58-62f2ebd783bf")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR022"
 			(at 54.61 81.28 0)
 			(effects
 				(font
@@ -7109,7 +7109,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR023")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -7125,7 +7125,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad368cbe-5726-47c7-a493-8cdff0e6f832")
-		(property "Reference" "U9"
+		(property "Reference" "U8"
 			(at 131.572 71.374 0)
 			(effects
 				(font
@@ -7189,7 +7189,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U9")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -7205,7 +7205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad7ae2ee-b041-485f-858f-a0dd47617338")
-		(property "Reference" "U5"
+		(property "Reference" "U4"
 			(at 83.4233 119.38 0)
 			(effects
 				(font
@@ -7298,7 +7298,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U5")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -7314,7 +7314,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b369c922-b1f4-4b40-b31a-86bcaa440f8e")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR032"
 			(at 220.98 55.88 0)
 			(effects
 				(font
@@ -7364,7 +7364,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR034")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -7380,7 +7380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3d683a7-a2ba-49c1-a347-240b74afe1ac")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR024"
 			(at 81.28 106.68 0)
 			(effects
 				(font
@@ -7430,7 +7430,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR025")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -7606,7 +7606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bb47844e-c06e-4cb0-a993-62e99de334fa")
-		(property "Reference" "C4"
+		(property "Reference" "C7"
 			(at 64.008 101.092 0)
 			(effects
 				(font
@@ -7678,7 +7678,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "C4")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -8107,7 +8107,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4bffa16-1c6e-4c07-b353-87001071e3fe")
-		(property "Reference" "U6"
+		(property "Reference" "U5"
 			(at 101.346 40.386 0)
 			(effects
 				(font
@@ -8194,7 +8194,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "U6")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -8210,7 +8210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea8b708a-13ca-4d04-89df-2400da7300b5")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR031"
 			(at 220.98 41.91 0)
 			(effects
 				(font
@@ -8260,7 +8260,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "#PWR033")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -8343,7 +8343,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9fca5dc-f036-49ef-9671-9cc9f1ee67ba")
-		(property "Reference" "C5"
+		(property "Reference" "C8"
 			(at 109.728 138.938 0)
 			(effects
 				(font
@@ -8415,7 +8415,7 @@
 		(instances
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088/0856e660-1508-40ef-8651-c4510fa8d31c"
-					(reference "C5")
+					(reference "C8")
 					(unit 1)
 				)
 			)

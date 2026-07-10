@@ -1,4 +1,5 @@
 **/*.lck
+kicad/fp-info-cache
 
 # Prerequisites
 *.d
