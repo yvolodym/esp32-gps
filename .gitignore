@@ -58,3 +58,11 @@ dkms.conf
 *.dwo
 
 kicad/esp32-gps-backups
+
+# ESP-IDF
+build/
+.vscode/*
+.clangd
+managed_components/
+dependencies.lock
+

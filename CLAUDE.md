@@ -8,9 +8,10 @@ Diese Datei gibt Claude Code (claude.ai/code) Kontext für die Arbeit in diesem 
 des ESP32. Die vom GNSS-Modul gelieferten Positionsdaten sollen über Bluetooth des ESP32 an ein
 Endgerät (z. B. Smartphone/Laptop, Navigations-App) ausgelesen werden.
 
-Aktueller Stand: Es existiert das vollständige KiCad-Hardwaredesign (Schaltplan + Layout). Firmware
-für den ESP32 (Auslesen des GNSS-Moduls per UART, Weiterleitung der NMEA-Daten via Bluetooth SPP)
-ist noch **nicht** Teil dieses Repos.
+Aktueller Stand: Das KiCad-Hardwaredesign (Schaltplan + Layout) ist vollständig. Die ESP-IDF-Firmware
+(`main/`) liest das GNSS-Modul per UART2 aus (Pins IO25/IO26, siehe Schaltplan-Netze `GPS_TX`/`GPS_RX`)
+und gibt die NMEA-Sätze aktuell nur im Log aus. Weiterleitung via Bluetooth SPP/BLE ist der nächste
+Schritt, aber noch nicht implementiert.
 
 Projektsprache: Deutsch (Commits, Doku, Kommentare in Schaltplänen).
 
@@ -22,7 +23,7 @@ Das Design besteht aus zwei Schaltplanblättern:
   - **ESP32-PICO-V3** (Espressif SiP): MCU mit integriertem WLAN + Bluetooth Classic/BLE.
     Übernimmt Auslesen des GNSS-Moduls und die Bluetooth-Kommunikation.
   - **Ai-Thinker GP-01**: GNSS-Modul (GPS/BDS/GLONASS), SMD mit Castellated Pads, Anbindung
-    über UART.
+    über UART0 des Moduls (TX0/RX0) an ESP32 IO25/IO26 (Netze `GPS_TX`/`GPS_RX`, 9600 Baud NMEA).
   - **CH340C**: USB-UART-Brücke für Programmierung/Debugging des ESP32 über USB.
   - Auto-Programming-Schaltung (BCW66G-Transistoren) für automatisches Reset/Boot über DTR/RTS
     beim Flashen.
@@ -50,10 +51,14 @@ kicad/
   esp32-gps.kicad_pcb   Platinenlayout
   esp32-gps.kicad_prl   lokale Projekteinstellungen (nicht versionsrelevant)
   esp32-gps-backups/    KiCad-Autobackups (in .gitignore, nicht committen)
+main/                   ESP-IDF-Firmware (main.c: UART-Init + Log-Ausgabe der NMEA-Sätze)
+CMakeLists.txt          ESP-IDF-Projekt-Root
+sdkconfig.defaults      Projekt-Defaults (Chip: esp32, siehe `idf.py set-target esp32`)
+build/                  ESP-IDF-Build-Output (in .gitignore, nicht committen)
 ```
 
-Es gibt aktuell keinen Firmware-/Software-Ordner. Sobald ESP32-Code hinzukommt, sollte er in
-einem eigenen Verzeichnis (z. B. `firmware/`) mit eigener Doku abgelegt werden.
+Firmware-Framework: ESP-IDF 6.0.2 (native, kein Arduino/PlatformIO), analog zum Schwesterprojekt
+`arduino/esp32-controller`. Bauen/Flashen: `. $IDF_PATH/export.sh && idf.py build flash monitor`.
 
 ## Arbeiten mit diesem Repo
 
@@ -71,7 +76,7 @@ einem eigenen Verzeichnis (z. B. `firmware/`) mit eigener Doku abgelegt werden.
 
 ## Offene Punkte / nächste Schritte
 
-- Firmware für den ESP32 (Arduino- oder ESP-IDF-Projekt): GNSS-UART auslesen (NMEA), Daten über
-  Bluetooth SPP oder BLE bereitstellen.
+- Firmware: NMEA-Daten (aktuell nur Log) per Bluetooth SPP oder BLE bereitstellen.
+- Firmware: NMEA-Sätze parsen (z. B. Position/Zeit extrahieren) statt nur Rohtext zu loggen.
 - BOM/Fertigungsvorbereitung für das Board (siehe `kicad-happy:bom`).
 - Antennen-/HF-Betrachtung für die GNSS-Anbindung (Koax-Anschluss).
