@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "project": "esp32-gps.kicad_pro",
+  "current": "2026-07-10_2220",
+  "runs": {
+    "2026-07-10_2207": {
+      "source_hashes": {
+        "esp32-gps.kicad_sch": "sha256:aef56d6fd8f26c2bb9c6458fece535113523780d7cad4c36f4078249bb02dd4b",
+        "esp32-gps.kicad_pcb": "sha256:626b7801284f0a603fabfc30f58639aa5570784f7f9cabaee6e21f874b514a53"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py esp32-gps.kicad_sch"
+      },
+      "generated": "2026-07-10T22:07:52+02:00",
+      "pinned": false
+    },
+    "2026-07-10_2220": {
+      "source_hashes": {
+        "esp32-gps.kicad_sch": "sha256:525c5147ac9324c8dbc82ac67e8d8459fb991293cb116e79167436757e262c85"
+      },
+      "outputs": {
+        "schematic": "schematic.json",
+        "pcb": "pcb.json"
+      },
+      "scripts": {
+        "schematic": "analyze_schematic.py esp32-gps.kicad_sch"
+      },
+      "generated": "2026-07-10T22:20:33+02:00",
+      "pinned": false
+    }
+  }
+}

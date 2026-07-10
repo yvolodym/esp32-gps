@@ -24,7 +24,10 @@ Das Design besteht aus zwei Schaltplanblättern:
     Übernimmt Auslesen des GNSS-Moduls und die Bluetooth-Kommunikation.
   - **Ai-Thinker GP-01**: GNSS-Modul (GPS/BDS/GLONASS), SMD mit Castellated Pads, Anbindung
     über UART0 des Moduls (TX0/RX0) an ESP32 IO25/IO26 (Netze `GPS_TX`/`GPS_RX`, 9600 Baud NMEA).
-  - **CH340C**: USB-UART-Brücke für Programmierung/Debugging des ESP32 über USB.
+  - **CP2102N-A02-GQFN28** (Silicon Labs): USB-UART-Brücke für Programmierung/Debugging des ESP32
+    über USB (ersetzt das ursprünglich vorgesehene CH340C). QFN28-Gehäuse mit Batterieladeerkennung
+    (CHREN/CHR0/CHR1, ungenutzt), integriertem USB-Transceiver (kein externer Quarz/Pull-up nötig)
+    und Modem-Control-Signalen (DTR/RTS steuern weiterhin die Auto-Programming-Transistoren).
   - Auto-Programming-Schaltung (BCW66G-Transistoren) für automatisches Reset/Boot über DTR/RTS
     beim Flashen.
   - Koax-Steckverbinder (`Conn_Coaxial_Small`) für die GNSS-Antenne.
