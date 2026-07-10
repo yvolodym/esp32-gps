@@ -1921,7 +1921,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_yvolodym:Switch small"
+		(symbol "PCM_yvolodym:Switch_Small"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1968,7 +1968,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Switch small_1_1"
+			(symbol "Switch_Small_1_1"
 				(circle
 					(center -2.286 -2.54)
 					(radius 0.508)
@@ -5552,7 +5552,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_yvolodym:Switch small")
+		(lib_id "PCM_yvolodym:Switch_Small")
 		(at 160.02 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
