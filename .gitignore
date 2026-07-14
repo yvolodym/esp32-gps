@@ -1,6 +1,6 @@
 **/*.lck
 kicad/fp-info-cache
-
+kicad/jlcpcb/
 # Prerequisites
 *.d
 
