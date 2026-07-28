@@ -3744,12 +3744,6 @@
 		)
 	)
 	(junction
-		(at 246.38 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03d2bdb1-f39e-4e58-a36b-ce10d695a072")
-	)
-	(junction
 		(at 165.1 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3880,6 +3874,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb94389b-6af4-490f-93bf-d058ca546b7b")
+	)
+	(junction
+		(at 223.52 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f11d3239-a2f8-44ad-9549-2adee931b075")
+	)
+	(junction
+		(at 220.98 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f64b4b8b-b63a-4863-8a81-1a3f1d391778")
 	)
 	(no_connect
 		(at 259.08 87.63)
@@ -4153,6 +4159,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 130.81) (xy 223.52 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d357d6a-c066-4a53-bda9-725aae8c968a")
+	)
+	(wire
+		(pts
 			(xy 86.36 62.23) (xy 83.82 62.23)
 		)
 		(stroke
@@ -4193,7 +4209,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 121.92) (xy 226.06 121.92)
+			(xy 214.63 121.92) (xy 223.52 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4213,13 +4229,13 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 132.08) (xy 254 132.08)
+			(xy 220.98 140.97) (xy 226.06 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2011c234-fe4d-4598-a5ec-e539761557cb")
+		(uuid "2006341d-445e-4452-9275-6d40cfee308a")
 	)
 	(wire
 		(pts
@@ -4483,13 +4499,13 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 127) (xy 246.38 132.08)
+			(xy 220.98 127) (xy 220.98 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e910d51-6885-432b-9ce9-80242348af84")
+		(uuid "4f2e26e5-f21b-4c04-8f22-4006cb136685")
 	)
 	(wire
 		(pts
@@ -4873,16 +4889,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 135.89) (xy 246.38 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8af0a521-f552-4c02-8722-d62233d78fc6")
-	)
-	(wire
-		(pts
 			(xy 30.48 81.28) (xy 43.18 81.28)
 		)
 		(stroke
@@ -4900,6 +4906,16 @@
 			(type default)
 		)
 		(uuid "8eae8390-9e1a-4088-8742-cde3a59598cc")
+	)
+	(wire
+		(pts
+			(xy 246.38 135.89) (xy 246.38 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f1d2012-1831-467b-b813-131e635837e1")
 	)
 	(wire
 		(pts
@@ -5003,6 +5019,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 121.92) (xy 226.06 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c302749-455a-4f3b-ab85-b3cb473838ad")
+	)
+	(wire
+		(pts
 			(xy 49.53 116.84) (xy 49.53 120.65)
 		)
 		(stroke
@@ -5040,6 +5066,16 @@
 			(type default)
 		)
 		(uuid "a1df9561-0179-4e86-b7e9-e2f2b83d686d")
+	)
+	(wire
+		(pts
+			(xy 246.38 127) (xy 220.98 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a235ac5b-b09d-4ef2-aa55-1034469ff5f5")
 	)
 	(wire
 		(pts
@@ -5110,6 +5146,16 @@
 			(type default)
 		)
 		(uuid "b031fe7b-1541-429e-8acd-3c35a64bd540")
+	)
+	(wire
+		(pts
+			(xy 223.52 130.81) (xy 223.52 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4d0c4d1-bfef-4748-bbae-e562aa59d62e")
 	)
 	(wire
 		(pts
@@ -5603,7 +5649,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 140.97) (xy 226.06 140.97)
+			(xy 214.63 140.97) (xy 220.98 140.97)
 		)
 		(stroke
 			(width 0)
@@ -8303,73 +8349,6 @@
 			(project "esp32-gps"
 				(path "/56168bfe-34bc-4344-8600-222c44ddf088"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 254 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "824657b7-7da4-41bd-bf41-d67bbad99a95")
-		(property "Reference" "#PWR025"
-			(at 260.35 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 257.81 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8de7262f-5da0-4efb-ab36-758288ba8915")
-		)
-		(instances
-			(project "esp32-gps"
-				(path "/56168bfe-34bc-4344-8600-222c44ddf088"
-					(reference "#PWR025")
 					(unit 1)
 				)
 			)
